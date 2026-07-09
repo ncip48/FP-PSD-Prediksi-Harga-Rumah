@@ -1,0 +1,8 @@
+=== HASIL ANALISIS REGRESI ===\n\n1. Matriks Korelasi:\n                   price_million  log_price_million  land_size_m2  building_size_m2
+price_million           1.000000           0.334854      0.087762          0.066266
+log_price_million       0.334854           1.000000      0.586557          0.711634
+land_size_m2            0.087762           0.586557      1.000000          0.694355
+building_size_m2        0.066266           0.711634      0.694355          1.000000\n\n2. Regresi Linier Sederhana (Predictor: building_size_m2)\nMAE: 0.4976\nRMSE: 0.7075\nR2 Score: 0.4690\n\n3. Regresi Linier Berganda (Predictors: land_size_m2, building_size_m2)\nMAE: 0.4828\nRMSE: 0.6918\nR2 Score: 0.4923\n\n4. Uji Asumsi Klasik (Regresi Berganda)\na. Multikolinearitas (VIF):\n           Variable       VIF
+0             const  2.067560
+1      land_size_m2  1.930985
+2  building_size_m2  1.930985\n\nb. Heteroskedastisitas (Breusch-Pagan): p-value = 0.0000\nc. Normalitas Residual (Shapiro-Wilk): p-value = 0.0000\n
