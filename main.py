@@ -13,7 +13,7 @@ def main():
         f.write("=== HASIL ANALISIS REGRESI ===\n\n")
         
         # 1. Korelasi
-        corr = df[['price_million', 'log_price_million', 'land_size_m2', 'building_size_m2']].corr()
+        corr = df[['price_million', 'building_size_m2', 'land_size_m2', 'log_price_million']].corr()
         f.write("1. Matriks Korelasi:\n")
         f.write(corr.to_string() + "\n\n")
         

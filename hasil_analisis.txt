@@ -1,11 +1,11 @@
 === HASIL ANALISIS REGRESI ===
 
 1. Matriks Korelasi:
-                   price_million  log_price_million  land_size_m2  building_size_m2
-price_million           1.000000           0.334854      0.087762          0.066266
-log_price_million       0.334854           1.000000      0.586557          0.711634
-land_size_m2            0.087762           0.586557      1.000000          0.694355
-building_size_m2        0.066266           0.711634      0.694355          1.000000
+                   price_million  building_size_m2  land_size_m2  log_price_million
+price_million           1.000000          0.066266      0.087762           0.334854
+building_size_m2        0.066266          1.000000      0.694355           0.711634
+land_size_m2            0.087762          0.694355      1.000000           0.586557
+log_price_million       0.334854          0.711634      0.586557           1.000000
 
 2. Regresi Linier Sederhana (Predictor: building_size_m2)
 MAE: 0.4976
